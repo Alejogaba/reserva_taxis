@@ -1,0 +1,48 @@
+name: reserva_taxis
+description: "A new Flutter project."
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  art_sweetalert: ^0.0.5
+  auto_size_text: ^3.0.0
+  device_preview: ^1.1.0
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_polyline_points: ^2.0.1
+  geocoding: ^3.0.0
+  get: ^4.6.6
+  google_maps_flutter: ^2.6.1
+  google_maps_place_picker_mb: ^3.1.2
+  location: ^6.0.2
+  logger: ^2.3.0
+
+  flutter_gen: any
+  google_fonts: ^6.2.1
+  intl: any
+  permission_handler: ^11.3.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  assets:
+    # Add assets from the images directory to the application.
+    - assets/images/
+flutter_intl:
+  enabled: true

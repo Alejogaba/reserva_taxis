@@ -1,0 +1,38 @@
+{
+    "@@locale": "en",
+    "loginPageTitle": "Login",
+    "emailHintText": "Email",
+    "passwordHintText": "Password",
+    "emptyFieldError": "Please do not leave this field empty",
+    "validEmailError": "Please enter a valid email address",
+    "shortPasswordError": "Password must be at least 6 characters long",
+    "loginButtonText": "Login",
+    "taxiTitle": "Taxi",
+    "managementTitle": "Management",
+    "loginSubtitle": "Login",
+    "togglePasswordVisibility": "Show password",
+
+    "locationNotAvailable": "Location not available",
+    "activateLocation": "Enable Location",
+    "invalidRouteMessage": "Invalid route, verify the destination",
+    "confirmRouteMessage": "Is this the route you want to take?",
+    "selectRouteMessage": "Now you must select the point you wish to reach",
+    "selectDestination": "Select Destination",
+    "continueButton": "Continue",
+    "yourLocation": "Your Location",
+    "searchDestinationHint": "Search destination",
+  "outsidePickAreaText": "Area not available",
+  "searchingText": "Searching...",
+  "turnOnLocation": "You must grant location permissions to the app to proceed",
+
+  "reservationDetailsTitle": "Reservation Details",
+  "origin": "Origin",
+  "destination": "Destination",
+  "distance": "Distance",
+  "estimatedDuration": "Estimated Duration",
+  "hours": "Hours",
+  "completedTitle": "Completed",
+  "reservationSuccess": "Reservation created successfully",
+  "createReservation": "Create Reservation"
+  }
+  

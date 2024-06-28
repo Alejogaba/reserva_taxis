@@ -1,0 +1,39 @@
+{
+    "@@locale": "es",
+    "loginPageTitle": "Iniciar Sesión",
+    "emailHintText": "Correo electrónico",
+    "passwordHintText": "Contraseña",
+    "emptyFieldError": "No deje este campo vacío",
+    "validEmailError": "Por favor, introduzca un correo electrónico válido",
+    "shortPasswordError": "La contraseña debe tener al menos 6 caracteres",
+    "loginButtonText": "Iniciar Sesión",
+    "taxiTitle": "Taxi",
+    "managementTitle": "Gestión",
+    "loginSubtitle": "Iniciar Sesión",
+    "togglePasswordVisibility": "Mostrar contraseña",
+
+    "locationNotAvailable": "Ubicación no disponible",
+    "activateLocation": "Activar Ubicación",
+    "invalidRouteMessage": "Ruta no válida, verifica el destino",
+    "confirmRouteMessage": "¿Esta es la ruta que vas a tomar?",
+    "selectRouteMessage":"Ahora debes seleccionar el punto al que deseas llegar",
+    "selectDestination": "Seleccionar Destino",
+    "continueButton": "Continuar",
+    "yourLocation": "Tu ubicación",
+    "searchDestinationHint": "Buscar destino",
+    "outsidePickAreaText": "Zona no disponible",
+    "searchingText": "Buscando...",
+    "turnOnLocation": "Debe dar permisos de ubicación a la app para poder continuar",
+
+    "reservationDetailsTitle": "Detalles de la reserva",
+  "origin": "Origen",
+  "destination": "Destino",
+  "distance": "Distancia",
+  "estimatedDuration": "Duración estimada",
+  "hours": "Horas",
+  "completedTitle": "Completado",
+  "reservationSuccess": "Reserva creada con éxito",
+  "createReservation": "Crear Reserva"
+
+  }
+  
