@@ -4,7 +4,7 @@ App creada para la realización de una prueba técnica
 
 ## Galeria
 
-![capturas_de_pantalla]('https://i.imgur.com/NjBfFdi.jpeg')
+![capturas_de_pantalla](https://i.imgur.com/NjBfFdi.jpeg)
 
 ## Localización
 
