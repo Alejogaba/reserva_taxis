@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:geocoding/geocoding.dart' as geo;
 import 'package:get/get.dart';
 
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -263,7 +264,26 @@ class _HomePageViewState extends State<HomePageView> {
                                     right: MediaQuery.of(context).size.width *
                                         0.02),
                                 child: ElevatedButton(
-                                  onPressed: () {
+                                  onPressed: () async {
+                                    setState(() {
+                                      loading = true;
+                                    });
+                                    String currentAddress =
+                                        S.current.yourLocation;
+                                    try {
+                                      List<geo.Placemark> placemarks =
+                                          await geo.placemarkFromCoordinates(
+                                              currentLocation!.latitude!,
+                                              currentLocation!.longitude!);
+                                      currentAddress =
+                                          '${placemarks[0].street}, ${placemarks[0].locality}, ${placemarks[0].administrativeArea}';
+                                    } on Exception catch (e) {
+                                      Logger().e(
+                                          'Error al obtener dirección de origen: $e');
+                                    }
+                                    setState(() {
+                                      loading = false;
+                                    });
                                     Get.to(ReservationPageView(
                                         reservation: Reservation(
                                             originLatitude:
@@ -274,7 +294,7 @@ class _HomePageViewState extends State<HomePageView> {
                                                 destinationLocation!.latitude,
                                             destinationLongitude:
                                                 destinationLocation!.longitude,
-                                            originName: S.current.yourLocation,
+                                            originName: currentAddress,
                                             destinationName: addressDestination,
                                             distance: distance,
                                             duration: duration)));
@@ -350,7 +370,8 @@ class _HomePageViewState extends State<HomePageView> {
         return;
       }
     }
-  
+
+    await Permission.location.request();
     var status = await Permission.location.status;
     if (status.isDenied) {
       Logger().e('Permiso ubicación denegado');
